@@ -2,5 +2,4 @@ const data = [3, 225, 1, 225, 6, 6, 1100, 1, 238, 225, 104, 0, 1102, 35, 92, 225
 const processor = require('../2/processor');
 const basicRules = require('../2/basic-rules');
 const newRules = require('./new-rules');
-
-console.log(processor(data,{...basicRules,...newRules}))
+console.log(processor(data, { ...basicRules, ...newRules }))
