@@ -8,6 +8,7 @@ let processor = (memory, instructions) => {
 
         let opCode = memory[currentPosition];
         const params = parseUpcode(opCode);
+        
         let output = instructions[params.opCode](memory, currentPosition, params.modes);
         memory = output.data;
         currentPosition = output.position;
